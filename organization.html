@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FrPD organization profile, leadership, team and coverage area.">
+<title>Organization | FrPD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+<script src="js/script.js" defer></script>
+</head>
+<body data-page="organization">
+<a class="skip-link" href="#main">Skip to content</a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+<aside class="sidebar" id="sidebar" aria-label="Main navigation"></aside>
+<div class="scrim" id="scrim"></div>
+
+<main id="main">
+  <section class="hero org-hero" id="top">
+    <div class="hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Organizations</span> / <strong id="crumb">WNA</strong></nav>
+      <p class="chip" id="orgCode">WNA</p>
+      <h1 id="orgName">Western North Area</h1>
+      <p class="slogan" id="orgDesc"></p>
+      <div class="actions"><a class="btn btn-primary" href="#orgTeam">Meet the team</a><a class="btn btn-soft" href="index.html#coverage">All coverage areas</a></div>
+    </div>
+    <div class="hero-side"><div class="hero-stats"><div><strong id="locCount">6</strong><span>Locations</span></div><div><strong>24/7</strong><span>Support</span></div><div><strong id="regionFact">Region</strong><span>Region</span></div></div></div>
+  </section>
+
+  <section class="section">
+    <div class="message">
+      <div class="message-photo"><img id="leaderPhoto" src="images/leaders/leader-primary.svg" alt="Organization leader"></div>
+      <div><p class="chip" id="leaderRole"></p><h2 id="leaderName"></h2><blockquote id="leaderQuote"></blockquote><p id="leaderBio"></p></div>
+    </div>
+  </section>
+
+  <section class="section" id="orgTeam">
+    <header class="sec-head row"><div><h2>Our team</h2><p>Search by name, role or department. Scroll sideways to see everyone.</p></div>
+      <div class="tools"><label class="search"><i data-lucide="search"></i><input type="search" id="teamSearch" placeholder="Search team" aria-label="Search team"></label>
+      <button class="arrow" id="teamPrev" aria-label="Previous"><i data-lucide="arrow-left"></i></button><button class="arrow" id="teamNext" aria-label="Next"><i data-lucide="arrow-right"></i></button></div></header>
+    <div class="filters" id="teamFilters" aria-label="Department filters"></div>
+    <div class="rail" id="teamRail" tabindex="0" aria-label="Team members"></div>
+    <p class="empty is-hidden" id="teamEmpty">No team members match your search.</p>
+  </section>
+
+  <section class="section area-section">
+    <header class="sec-head"><h2>Coverage area</h2><p id="coverDesc"></p></header>
+    <div class="cover-layout">
+      <div class="areas single" id="mapHolder"></div>
+      <div class="locs stag" id="locList"></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

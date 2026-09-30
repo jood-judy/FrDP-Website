@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FrPD Information Security: team, cyber security and AI tools, and safety tips.">
+<title>Information Security | FrPD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+<script src="js/script.js" defer></script>
+</head>
+<body data-page="infosec" class="cyber">
+<a class="skip-link" href="#main">Skip to content</a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+<aside class="sidebar" id="sidebar" aria-label="Main navigation"></aside>
+<div class="scrim" id="scrim"></div>
+
+<main id="main">
+  <section class="hero cyber-hero" id="top">
+    <div class="cy-grid" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Other Groups</span> / <strong>Information Security</strong></nav>
+      <p class="chip mono">// cyber defence</p>
+      <h1>Information Security</h1>
+      <p class="slogan">Protecting information, systems and people across FrPD.</p>
+      <div class="triad mono"><span>Confidentiality</span><span>Integrity</span><span>Availability</span></div>
+      <div class="actions"><a class="btn btn-primary" href="#sec-team">Meet the team</a><a class="btn btn-soft" href="#tools">Tools &amp; AI</a><a class="btn btn-soft" href="#tips">Safety tips</a></div>
+    </div>
+    <div class="shield" aria-hidden="true">
+      <svg viewBox="0 0 200 224" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M100 8 178 38v72c0 48-33 82-78 100-45-18-78-52-78-100V38Z" stroke="#38BDF8" stroke-width="3"/><path d="M100 26 162 50v60c0 38-26 66-62 82-36-16-62-44-62-82V50Z" stroke="#2563EB" stroke-width="2" stroke-dasharray="4 6"/><rect x="70" y="98" width="60" height="50" rx="9" stroke="#E6F1FF" stroke-width="3.5"/><path d="M82 98V84a18 18 0 0 1 36 0v14" stroke="#E6F1FF" stroke-width="3.5"/><circle cx="100" cy="120" r="5" fill="#38BDF8" stroke="none"/><path d="M100 125v10" stroke="#38BDF8" stroke-width="3.5"/></svg>
+    </div>
+  </section>
+
+  <section class="section" id="sec-team">
+    <header class="sec-head"><h2>Security team</h2><p>The people who keep FrPD’s information and systems protected.</p></header>
+    <div class="tree" id="secTree"></div>
+  </section>
+
+  <section class="section" id="tools">
+    <header class="sec-head row"><div><h2>Cyber security &amp; AI tools</h2><p>Tools employees can use every day. Select a card to open the tool.</p></div></header>
+    <p class="notice"><i data-lucide="info"></i>Check that a tool is approved for company use before you rely on it, and never share confidential information with public AI tools.</p>
+    <div class="filters" id="toolFilters" aria-label="Tool categories"></div>
+    <div class="tool-grid" id="toolGrid"></div>
+  </section>
+
+  <section class="section" id="tips">
+    <header class="sec-head"><h2>Cyber security safety tips</h2><p>Small habits that stop most attacks.</p></header>
+    <div class="tip-grid" id="tipGrid"></div>
+  </section>
+
+  <section class="section" id="report">
+    <div class="contact"><div><h2>See something suspicious?</h2><p>Report phishing, lost devices or unusual activity to the security team straight away.</p></div>
+      <a class="btn btn-white" href="mailto:security@example.com"><i data-lucide="mail"></i> security@example.com</a></div>
+  </section>
+</main>
+</body>
+</html>
